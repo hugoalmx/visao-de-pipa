@@ -3,13 +3,7 @@ html, body {
     height: 100%;
     margin: 0;
   }
-  
-  .page {
-    display: flex;
-    flex-direction: column;
-    height: 100vh; /* Garantir que ocupe 100% da altura da tela */
-  }
-  
+    
    
   .content {
     flex: 1; /* O conteúdo ocupa o espaço restante */

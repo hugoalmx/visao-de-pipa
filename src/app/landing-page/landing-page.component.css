@@ -1,0 +1,12 @@
+.introduction-section {
+    min-height: 40dvh;
+}
+
+.main-carousel-section {
+    /* height: 85dvh; */
+}
+
+img {
+    object-fit: fill;
+    height: 100%;
+}
