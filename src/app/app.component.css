@@ -1,0 +1,21 @@
+/* Garantir que o body e html ocupem 100% da altura da página */
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Garantir que ocupe 100% da altura da tela */
+  }
+  
+   
+  .content {
+    flex: 1; /* O conteúdo ocupa o espaço restante */
+    padding: 20px;
+    overflow-y: auto; /* Se o conteúdo for grande, permite rolagem */
+  }
+  
+
+  
