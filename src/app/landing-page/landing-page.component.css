@@ -1,5 +1,31 @@
 .introduction-section {
     min-height: 40dvh;
+    justify-content: center;
+    align-items: center;
+    margin-block: 3rem;
+}
+
+.introduction-section__main-title {
+    font-size: 64px;
+}
+
+.introduction-section__p-content {
+    max-width: 1100px;
+}
+
+.introduction-section__call-btns-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.introduction-section__call-btns-container__button {
+    width: 200px;
+    height: 60px;
+    border: none;
+    border-radius: 30px;
 }
 
 .main-carousel-section {
