@@ -10,3 +10,25 @@ img {
     object-fit: fill;
     height: 100%;
 }
+
+.card-section{
+    min-width: 40dvh;
+}
+
+.cards{
+    display:flex;
+    justify-content: center;
+}
+
+.card{
+    margin: 10px;
+    background-color: #233B53;  
+    color:#F9FAF9;
+}
+
+.bg-color-card{
+   
+    background-color: #F9FAF9;  
+    color:#233B53;
+}
+
