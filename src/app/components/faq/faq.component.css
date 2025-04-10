@@ -42,11 +42,20 @@
     color: #223A54;
 }
 
-/* Remove o ícone padrão do Bootstrap */
 .accordion-button::after {
     filter: brightness(0) invert(1);
 }
 
 .accordion-button.collapsed::after {
     filter: none;
+}
+
+.accordion-button.collapsed:hover {
+    background-color: #e9ecef;
+    color: #000;
+}
+
+.accordion-button:hover {
+    background-color: #223A54;
+    color: #FDFDFD;
 }

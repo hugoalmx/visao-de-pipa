@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+.card {
+  background-color: #233b53 !important;
+  font-family: "Inter", sans-serif;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+  color: #F9FAF9;
+}
+
+img {
+  border-radius: 50%;
+}
+
+.fs-4 {
+  font-size: 1.5rem;
+}
+
+.text-warning {
+  color: #FFD700;
+}

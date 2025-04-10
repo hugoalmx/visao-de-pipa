@@ -10,4 +10,8 @@ export const routes: Routes = [
         path: 'FAQ',
         component: LandingPageComponent,
     },
+    {
+        path: '**',
+        redirectTo: '',
+    }
 ];

@@ -11,6 +11,10 @@
 .btn-custom-primary {
     background-color: #1E374E;
     border-color: #1E374E;
+
+    &:hover {
+        transform: scale(1.02);
+    }
 }
 
 .btn-custom-primary:hover {
