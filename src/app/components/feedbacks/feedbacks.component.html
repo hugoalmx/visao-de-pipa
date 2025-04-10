@@ -1,0 +1,8 @@
+<section class="container py-4">
+  <h1 class="display-4 fw-semibold mb-5" style="font-size: clamp(1.75rem, 4vw, 2.5rem);">Nossos feedbacks</h1>
+  <div class="row">
+    <div class="col-12 col-md-6 col-lg-4 mb-4" *ngFor="let feedback of feedbacks">
+      <app-feedback-card [feedback]="feedback"></app-feedback-card>
+    </div>
+  </div>
+</section>

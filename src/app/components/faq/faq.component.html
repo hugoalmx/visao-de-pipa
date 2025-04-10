@@ -1,0 +1,29 @@
+<section class="container py-4">
+  <h1 class="display-4 fw-semibold mb-4" style="font-size: clamp(1.75rem, 4vw, 2.5rem);">Perguntas Frequentes</h1>
+  
+  <div class="accordion" id="faqAccordion">
+    <div *ngFor="let item of faqItems; let i = index" class="accordion-item">
+      <h2 class="accordion-header">
+        <button 
+          class="accordion-button" 
+          [class.collapsed]="i !== 0"
+          type="button" 
+          data-bs-toggle="collapse" 
+          [attr.data-bs-target]="'#collapse' + i"
+          [attr.aria-expanded]="i === 0"
+          [attr.aria-controls]="'collapse' + i">
+          {{ item.question }}
+        </button>
+      </h2>
+      <div 
+        [id]="'collapse' + i" 
+        class="accordion-collapse collapse" 
+        [class.show]="i === 0"
+        data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          {{ item.answer }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,26 +1,29 @@
 <nav class="top-bar">
-    <div class="container1 w-100 justify-content-end p-4">
-       
-       <img src="../../../assets/logo-pipa.png" alt="Visão de Pipa" class="logo"> 
+  <div class="container-fluid px-4 py-2">
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="/">
+        <img src="../../../assets/logo-pipa.png" alt="Visão de Pipa" class="logo">
+      </a>
 
-      <!-- Menu -->
-      <ul class="menu p-3">
+      <button class="navbar-toggler d-lg-none border-0" type="button" (click)="toggleMenu()">
+        <i class="fa-solid fa-bars text-white"></i>
+      </button>
 
+      <ul class="menu d-none d-lg-flex align-items-center gap-4" [class.show]="isMenuOpen">
         <li class="dropdown">
-          <span href="#">TODOS OS PASSEIOS <i class="fa-solid fa-chevron-down"></i> </span>
-          
+          <span class="d-flex align-items-center gap-2">
+            TODOS OS PASSEIOS 
+            <i class="fa-solid fa-chevron-down"></i>
+          </span>
           <ul class="dropdown-menu">
-            <li><a href="#">Passeio de Buggy</a></li>
-            <li><a href="#">Passeio de Barco</a></li>
-            <li><a href="#">Passeio a Cavalo</a></li>
+            <li><a href="#" class="dropdown-item">Passeio de Buggy</a></li>
+            <li><a href="#" class="dropdown-item">Passeio de Barco</a></li>
+            <li><a href="#" class="dropdown-item">Passeio a Cavalo</a></li>
           </ul>
         </li>
-
-        <li><a href="#">ONDE IR EM PIPA</a></li>
-
-        
       </ul>
     </div>
-  </nav>
+  </div>
+</nav>
 
   

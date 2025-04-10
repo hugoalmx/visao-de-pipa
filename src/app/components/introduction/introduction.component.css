@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+:host {
+    font-family: 'Inter', sans-serif;
+}
+
+.w-90 {
+    max-width: 90%;
+}
+
+.btn-custom-primary {
+    background-color: #1E374E;
+    border-color: #1E374E;
+
+    &:hover {
+        transform: scale(1.02);
+    }
+}
+
+.btn-custom-primary:hover {
+    background-color: #1a2f42;
+    border-color: #1a2f42;
+} 
