@@ -1,0 +1,20 @@
+<div class="feature-container" [class.image-left]="imagePosition === 'left'" [class.image-right]="imagePosition === 'right'">
+  <div class="row g-0 align-items-center">
+    
+    <!-- Coluna de Texto -->
+    <div class="col-md-6 text-column p-5">
+      <h2 class="feature-title">{{ title }}</h2>
+      <p class="feature-description">{{ description }}</p>
+      <div class="d-flex gap-3 mt-4">
+        <a [routerLink]="primaryButtonLink" class="btn btn-primary-custom">{{ primaryButtonText }}</a>
+        <a [routerLink]="secondaryButtonLink" class="btn btn-secondary-custom">{{ secondaryButtonText }}</a>
+      </div>
+    </div>
+
+    <!-- Coluna da Imagem -->
+    <div class="col-md-6 image-column" [class.order-md-first]="imagePosition === 'left'">
+      <img [src]="imageUrl" class="feature-image" [alt]="title">
+    </div>
+
+  </div>
+</div>

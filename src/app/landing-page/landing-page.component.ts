@@ -4,6 +4,9 @@ import { BestTourComponent } from '../components/best-tour/best-tour.component';
 import { FaqComponent } from '../components/faq/faq.component';
 import { AboutUsComponent } from '../components/about-us/about-us.component';
 import { FeedbacksComponent } from '../components/feedbacks/feedbacks.component';
+import { HeroSectionComponent } from '../components/hero-section/hero-section.component';
+
+
 @Component({
   selector: 'app-landing-page',
   standalone: true,

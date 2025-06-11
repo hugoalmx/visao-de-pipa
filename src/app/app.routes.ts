@@ -1,5 +1,6 @@
 import { Routes } from '@angular/router';
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { ToursComponent } from './tours/tours.component';
 
 export const routes: Routes = [
     {
@@ -9,6 +10,10 @@ export const routes: Routes = [
     {
         path: 'FAQ',
         component: LandingPageComponent,
+    },
+    {
+        path: 'passeios',
+        component: ToursComponent,
     },
     {
         path: '**',

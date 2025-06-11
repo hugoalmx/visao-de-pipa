@@ -1,9 +1,12 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+// Interface atualizada para incluir campos opcionais para o WhatsApp
 interface FaqItem {
   question: string;
   answer: string;
+  whatsappNumber?: string; // Número para gerar o link (ex: 5583991653804)
+  whatsappText?: string;   // Texto que será clicável (ex: WhatsApp)
 }
 
 @Component({
@@ -16,20 +19,25 @@ interface FaqItem {
 export class FaqComponent {
   faqItems: FaqItem[] = [
     {
-      question: 'É possível personalizar o passeio?',
-      answer: 'Sim, oferecemos opções de personalização para atender às suas necessidades específicas. Com exceção do jeep 4x4, que é um passeio único e não pode ser personalizado. Entre em contato conosco para discutir as possibilidades.'
+      question: 'Vocês oferecem passeios personalizados ou posso alterar o roteiro?',
+      answer:
+        'Sim, adoramos criar experiências únicas! A maioria dos nossos passeios privativos pode ser totalmente personalizada. Podemos ajustar o itinerário, o tempo de parada em cada local e até incluir lugares especiais do seu interesse. Como funciona a personalização? Basta entrar em contato com nossa equipe, nos contar suas ideias, e montaremos um roteiro perfeito para você!'
+    
     },
     {
       question: 'Quais são as políticas de cancelamento e reembolso?',
-      answer: 'Nossa política de cancelamento permite reembolso integral até 5 dias antes do passeio. Para cancelamentos com menos de 5 dias, oferecemos reembolso de 50% do valor do passeio.'
+      answer:  'Nossa política de cancelamento permite reembolso integral até 5 dias antes do passeio. Para cancelamentos com menos de 5 dias, oferecemos reembolso de 50% do valor do passeio.' 
     },
+    
     {
-      question: 'O passeio é adequado para crianças ou idosos?',
-      answer: 'Sim, nossos passeios são adaptados para todas as idades. Oferecemos equipamentos de segurança específicos e guias treinados para garantir uma experiência segura e agradável para todos.'
-    },
-    {
+      // --- MODIFICAÇÃO AQUI ---
       question: 'Como posso entrar em contato em caso de emergência?',
-      answer: 'Você pode entrar em contato conosco através do nosso WhatsApp (55 84 99999-9999).'
+      // O texto da resposta foi dividido para isolar o link
+      answer: 'Você pode entrar em contato conosco através do nosso ', 
+      // O número de WhatsApp, sem máscara, para criar o link
+      whatsappNumber: '5583991653804', 
+      // O texto que o usuário verá e clicará
+      whatsappText: 'WhatsApp (+55 83 99165-3804).' 
     }
   ];
 }

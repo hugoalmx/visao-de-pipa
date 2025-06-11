@@ -6,10 +6,11 @@
         <img [src]="tour.image" class="card-img-top mb-3" [alt]="tour.title" />
         <div class="d-flex flex-column flex-grow-1">
           <div class="flex-grow-1">
+            <p class="card-title mb-4">{{ tour.title }}</p>
             <p class="card-text mb-4">{{ tour.description }}</p>
           </div>
           <button class="btn w-100 mt-auto d-flex justify-content-center align-items-center">
-            <p class="text-center mb-0">{{ tour.buttonText }}</p>
+            <p routerLink="/passeios" class="text-center mb-0">{{ tour.buttonText }}</p>
           </button>
         </div>
       </div>

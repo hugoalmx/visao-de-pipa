@@ -1,0 +1,29 @@
+<app-hero-section
+  [title]="'PASSEIOS E ROTAS'"
+  [subtitle]="'Aqui você pode encontrar todos os passeios e rotas disponíveis!'"
+  [imageUrl]="'assets/caminho/para/sua/imagem.jpg'"
+  [buttonText]="'Visualizar'"
+  [scrollToId]="'nossos-passeios'">
+</app-hero-section>
+
+<div class="container py-5">
+
+  <!-- Exemplo com a IMAGEM À DIREITA -->
+  <app-feature-highlight
+    [title]="'Passeios de Jeep'"
+    [description]="'Prepare-se para explorar! Duas rotas cheias de emoção, natureza e momentos que viram história.'"
+    [imageUrl]="'assets/img/'"
+    [primaryButtonLink]="'/passeios'"
+    [imagePosition]="'right'">
+  </app-feature-highlight>
+
+  <!-- Exemplo com a IMAGEM À ESQUERDA -->
+  <app-feature-highlight
+    [title]="'Passeios de Buggy'"
+    [description]="'Litoral sul ou norte? Em qualquer direção, o buggy te leva direto pra aventura!'"
+    [imageUrl]="'assets/img/'"
+    [primaryButtonLink]="'/passeios'"
+    [imagePosition]="'left'">
+  </app-feature-highlight>
+
+</div>

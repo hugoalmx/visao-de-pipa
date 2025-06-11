@@ -1,7 +1,8 @@
 <nav class="top-bar">
   <div class="container-fluid px-4 py-2">
     <div class="d-flex align-items-center justify-content-between">
-      <a href="/">
+      <!-- 1. Boa prática: trocado href="/" por routerLink="/" -->
+      <a routerLink="/">
         <img src="../../../assets/logo-pipa.png" alt="Visão de Pipa" class="logo">
       </a>
 
@@ -10,20 +11,31 @@
       </button>
 
       <ul class="menu d-none d-lg-flex align-items-center gap-4" [class.show]="isMenuOpen">
+        <!-- 2. A lógica principal acontece aqui -->
         <li class="dropdown">
-          <span class="d-flex align-items-center gap-2">
-            TODOS OS PASSEIOS 
-            <i class="fa-solid fa-chevron-down"></i>
-          </span>
-          <ul class="dropdown-menu">
-            <li><a href="#" class="dropdown-item">Passeio de Buggy</a></li>
-            <li><a href="#" class="dropdown-item">Passeio de Barco</a></li>
-            <li><a href="#" class="dropdown-item">Passeio a Cavalo</a></li>
+
+          <!-- SE ESTIVER NA PÁGINA /passeios, MOSTRA O LINK "INÍCIO" -->
+          <a *ngIf="isOnPasseiosPage" 
+             routerLink="/" 
+             class="d-flex align-items-center gap-2 text-decoration-none">
+            INÍCIO
+          </a>
+
+          <!-- SENÃO, MOSTRA O MENU NORMAL DE PASSEIOS -->
+          <a *ngIf="!isOnPasseiosPage" 
+             class="d-flex align-items-center gap-2 text-decoration-none" >
+            TODOS OS PASSEIOS E ROTAS
+            <i class="fa-solid fa-chevron-down text-decoration-none"></i>
+          </a>
+          
+          <!-- O menu dropdown só será relevante quando o link de passeios estiver visível -->
+          <ul *ngIf="!isOnPasseiosPage" class="dropdown-menu">
+            <li><a routerLink="/passeios" class="dropdown-item">Passeio de Jeep</a></li>
+            <li><a routerLink="/passeios" class="dropdown-item">Passeio de Buggy</a></li>
+            <li><a routerLink="/passeios" class="dropdown-item">Passeio de Quadriciclo</a></li>
           </ul>
         </li>
       </ul>
     </div>
   </div>
 </nav>
-
-  

@@ -1,0 +1,20 @@
+<section 
+  class="hero-container" 
+  [style.background-image]="'url(' + imageUrl + ')'">
+  
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <h1 class="hero-title">{{ title }}</h1>
+    <p *ngIf="subtitle" class="hero-subtitle">{{ subtitle }}</p>
+
+    <!-- 
+      MODIFICAÇÃO AQUI: Trocamos <a> com [routerLink] por <button> com (click).
+      O botão só aparece se tivermos um texto e um ID para onde rolar.
+    -->
+    <button *ngIf="buttonText && scrollToId" (click)="scrollToTarget()" class="btn hero-button">
+      {{ buttonText }}
+    </button>
+  </div>
+
+</section>

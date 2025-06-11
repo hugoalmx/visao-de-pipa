@@ -1,0 +1,83 @@
+/*
+ * CSS ATUALIZADO para combinar com a identidade visual do seu site.
+ * - Adicionada a fonte 'Inter'.
+ * - Cores dos botões ajustadas para usar sua paleta de azul.
+*/
+
+.feature-container {
+  background-color: #f8f9fa; /* Fundo claro para contraste */
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  font-family: 'Inter', sans-serif; /* <<< ADICIONADO */
+}
+
+.text-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.feature-title {
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.feature-description {
+  font-size: 1.1rem;
+  color: #6c757d;
+}
+
+.feature-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  min-height: 400px;
+}
+
+/* Estilos dos botões para replicar o design */
+.btn-primary-custom {
+  background-color: #283A50; /* <<< COR ATUALIZADA */
+  color: white;
+  border: 1px solid #283A50; /* <<< COR ATUALIZADA */
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-primary-custom:hover {
+  background-color: #233B53; /* <<< COR ATUALIZADA (tom mais escuro do seu dropdown) */
+  transform: translateY(-2px);
+}
+
+.btn-secondary-custom {
+  background-color: transparent;
+  color: #283A50; /* <<< COR ATUALIZADA */
+  border: 1px solid #ced4da;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-secondary-custom:hover {
+  background-color: #e9ecef;
+  transform: translateY(-2px);
+}
+
+/* Ajustes para telas menores (mobile) */
+@media (max-width: 767.98px) {
+  .text-column {
+    /* Garante que o texto venha primeiro no mobile, independente da posição */
+    order: 1;
+    padding: 2.5rem !important; /* Mais padding em telas menores */
+  }
+  .image-column {
+    order: 0;
+  }
+}

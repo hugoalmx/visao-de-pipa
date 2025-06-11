@@ -21,7 +21,18 @@
         [class.show]="i === 0"
         data-bs-parent="#faqAccordion">
         <div class="accordion-body">
-          {{ item.answer }}
+          <!-- 
+            --- MODIFICAÇÃO AQUI ---
+            1. Exibe a parte inicial da resposta.
+            2. Se 'item.whatsappNumber' existir, cria uma tag <a> com o link dinâmico.
+          -->
+          {{ item.answer }}<a 
+            *ngIf="item.whatsappNumber"
+            [href]="'https://wa.me/' + item.whatsappNumber"
+            target="_blank"
+            class="fw-semibold text-decoration-none">
+            {{ item.whatsappText }}
+          </a>
         </div>
       </div>
     </div>

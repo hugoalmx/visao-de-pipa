@@ -20,6 +20,13 @@
     color: #F9FAF9;
 }
 
+.card-title {
+    color: #F9FAF9;
+    font-size: 24px;
+    font-weight: medium;
+
+}
+
 .btn {
     height: 35px;
     background-color: #F6F7FF;
