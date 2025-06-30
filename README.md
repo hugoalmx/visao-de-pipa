@@ -1,59 +1,79 @@
-# VisaoDePipa
+Visão de Pipa - Agência de Passeios Turísticos
+Bem-vindo ao repositório do site Visão de Pipa, uma plataforma moderna e interativa desenvolvida para apresentar os passeios turísticos oferecidos na paradisíaca Praia da Pipa, RN. O projeto foi construído utilizando as tecnologias mais recentes do ecossistema Angular, focando em uma experiência de usuário fluida, responsiva e rica em componentes reutilizáveis.
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.0.
+🚀 Tecnologias Utilizadas
+Este projeto foi desenvolvido com as seguintes tecnologias:
 
-## Development server
+Angular: Um dos frameworks mais poderosos para a construção de aplicações web modernas e de página única (SPA).
 
-To start a local development server, run:
+TypeScript: Superset do JavaScript que adiciona tipagem estática, aumentando a robustez e a manutenibilidade do código.
 
-```bash
+Bootstrap: Framework CSS para a criação de layouts responsivos e componentes de UI consistentes.
+
+Git & GitHub: Sistema de controle de versão para gerenciamento do código e fluxo de trabalho colaborativo.
+
+✨ Funcionalidades Principais
+Listagem de Passeios: Apresentação clara e atrativa das principais categorias de passeios (Jeep, Buggy, Quadriciclo) na página principal.
+
+Páginas de Detalhes: Rotas dedicadas para cada tipo de passeio, com galerias de fotos, descrições detalhadas e informações sobre as rotas específicas.
+
+Componentes Reutilizáveis:
+
+Hero Section: Banner de topo configurável com imagem, título e botão de ação.
+
+Feature Highlight: Componente flexível para destacar passeios, com layout alternado (imagem na esquerda/direita).
+
+Route Card: Cards específicos para listar as rotas de cada passeio, incluindo preço e descrição.
+
+Navegação Dinâmica: Navbar inteligente que altera seus links de acordo com a página em que o usuário está.
+
+Design Responsivo: A aplicação se adapta perfeitamente a diferentes tamanhos de tela, de desktops a dispositivos móveis.
+
+🛠️ Como Executar o Projeto
+Para executar este projeto em seu ambiente de desenvolvimento local, siga os passos abaixo:
+
+Clone o repositório:
+
+git clone https://github.com/seu-usuario/visao-de-pipa.git
+
+Acesse a pasta do projeto:
+
+cd visao-de-pipa
+
+Instale as dependências:
+(Certifique-se de ter o Node.js e o Angular CLI instalados)
+
+npm install
+
+Execute o servidor de desenvolvimento:
+
 ng serve
-```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Abra seu navegador e acesse http://localhost:4200/. A aplicação será recarregada automaticamente sempre que você salvar uma alteração nos arquivos.
 
-## Code scaffolding
+📁 Estrutura do Projeto
+A estrutura de componentes foi pensada para maximizar a reutilização e a organização do código:
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+src/app/
+├── components/
+│   ├── feature-highlight/  # (Componente de destaque com imagem)
+│   ├── hero-section/       # (Banner de topo)
+│   ├── navbar/
+│   ├── footer/
+│   └── route-card/         # (Card para as rotas específicas)
+│
+├── passeio-quadriciclo/    # (Página de exemplo para um passeio)
+├── tours/                  # (Página geral de passeios)
+└── ...
 
-```bash
-ng generate component component-name
-```
+👤 Autor
+Desenvolvido por [Seu Nome Aqui].
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+LinkedIn: linkedin.com/in/seu-usuario
 
-```bash
-ng generate --help
-```
+GitHub: @seu-usuario
 
-## Building
+Email: seu-email@exemplo.com
 
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+📄 Licença
+Este projeto está sob a licença MIT. Veja o arquivo LICENSE.md para mais detalhes.
