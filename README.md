@@ -1,4 +1,5 @@
 Visão de Pipa - Agência de Passeios Turísticos
+
 Bem-vindo ao repositório do site Visão de Pipa, uma plataforma moderna e interativa desenvolvida para apresentar os passeios turísticos oferecidos na paradisíaca Praia da Pipa, RN. O projeto foi construído utilizando as tecnologias mais recentes do ecossistema Angular, focando em uma experiência de usuário fluida, responsiva e rica em componentes reutilizáveis.
 
 🚀 Tecnologias Utilizadas
