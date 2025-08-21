@@ -1,80 +1,80 @@
-Visão de Pipa - Agência de Passeios Turísticos
+# Visão de Pipa - Agência de Passeios Turísticos
 
-Bem-vindo ao repositório do site Visão de Pipa, uma plataforma moderna e interativa desenvolvida para apresentar os passeios turísticos oferecidos na paradisíaca Praia da Pipa, RN. O projeto foi construído utilizando as tecnologias mais recentes do ecossistema Angular, focando em uma experiência de usuário fluida, responsiva e rica em componentes reutilizáveis.
+![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)
+![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Licença](https://img.shields.io/github/license/hugoalmx/portfoliohugoalmeidaangular?style=flat-square&label=licen%C3%A7a)
 
-🚀 Tecnologias Utilizadas
-Este projeto foi desenvolvido com as seguintes tecnologias:
+<p align="center">
+  <img src="URL_DO_SEU_GIF_OU_IMAGEM_AQUI" alt="Demonstração da aplicação Visão de Pipa" width="80%">
+</p>
 
-Angular: Um dos frameworks mais poderosos para a construção de aplicações web modernas e de página única (SPA).
+## 📋 Índice
 
-TypeScript: Superset do JavaScript que adiciona tipagem estática, aumentando a robustez e a manutenibilidade do código.
+- [Sobre o Projeto](#-sobre-o-projeto)
+- [Funcionalidades](#-funcionalidades)
+- [Tecnologias](#-tecnologias)
+- [Como Executar](#-como-executar)
+- [Estrutura do Projeto](#-estrutura-do-projeto)
+- [Contato](#-contato)
+- [Licença](#-licença)
 
-Bootstrap: Framework CSS para a criação de layouts responsivos e componentes de UI consistentes.
+## 📌 Sobre o Projeto
 
-Git & GitHub: Sistema de controle de versão para gerenciamento do código e fluxo de trabalho colaborativo.
+O **Visão de Pipa** é uma plataforma moderna e interativa desenvolvida para apresentar os passeios turísticos oferecidos na paradisíaca Praia da Pipa, RN. O projeto foi construído utilizando o ecossistema Angular, com foco em uma experiência de usuário fluida, responsiva e rica em componentes reutilizáveis, demonstrando práticas de desenvolvimento de software de alta qualidade.
 
-✨ Funcionalidades Principais
-Listagem de Passeios: Apresentação clara e atrativa das principais categorias de passeios (Jeep, Buggy, Quadriciclo) na página principal.
+**🔗 Acesse a demonstração ao vivo:** [**Visão de Pipa**](URL_DO_DEPLOY_AQUI)
 
-Páginas de Detalhes: Rotas dedicadas para cada tipo de passeio, com galerias de fotos, descrições detalhadas e informações sobre as rotas específicas.
+---
 
-Componentes Reutilizáveis:
+## ✨ Funcionalidades
 
-Hero Section: Banner de topo configurável com imagem, título e botão de ação.
+- [x] **Listagem de Passeios:** Apresentação clara das categorias de passeios (Jeep, Buggy, Quadriciclo) na página principal.
+- [x] **Páginas de Detalhes:** Rotas dedicadas para cada tipo de passeio, com galerias de fotos e descrições detalhadas.
+- [x] **Navegação Dinâmica:** Navbar inteligente que adapta seus links de acordo com a página atual.
+- [x] **Design Totalmente Responsivo:** A aplicação se adapta perfeitamente a desktops, tablets e dispositivos móveis.
+- [x] **Arquitetura Baseada em Componentes:**
+  - `Hero Section`: Banner de topo configurável.
+  - `Feature Highlight`: Destaque de passeios com layout alternado.
+  - `Route Card`: Cards para listar as rotas de cada passeio.
+  - E mais...
 
-Feature Highlight: Componente flexível para destacar passeios, com layout alternado (imagem na esquerda/direita).
+---
 
-Route Card: Cards específicos para listar as rotas de cada passeio, incluindo preço e descrição.
+## 🚀 Tecnologias
 
-Navegação Dinâmica: Navbar inteligente que altera seus links de acordo com a página em que o usuário está.
+Este projeto foi desenvolvido com as seguintes tecnologias e ferramentas:
 
-Design Responsivo: A aplicação se adapta perfeitamente a diferentes tamanhos de tela, de desktops a dispositivos móveis.
+- **Angular:** Framework para a construção de aplicações web modernas (SPA).
+- **TypeScript:** Superset do JavaScript que adiciona tipagem estática.
+- **Bootstrap:** Framework CSS para layouts responsivos e componentes de UI.
+- **Git & GitHub:** Sistema de controle de versão e fluxo de trabalho.
+- **Node.js:** Ambiente de execução para o ecossistema JavaScript.
 
-🛠️ Como Executar o Projeto
-Para executar este projeto em seu ambiente de desenvolvimento local, siga os passos abaixo:
+---
 
-Clone o repositório:
+## 🛠️ Como Executar
 
-git clone https://github.com/seu-usuario/visao-de-pipa.git
+Para executar este projeto localmente, siga os passos abaixo.
 
-Acesse a pasta do projeto:
+### Pré-requisitos
 
-cd visao-de-pipa
+- [Node.js](https://nodejs.org/en/) (versão LTS recomendada, ex: 18.x)
+- [Angular CLI](https://angular.io/cli) (ex: `npm install -g @angular/cli`)
+- [Git](https://git-scm.com/)
 
-Instale as dependências:
-(Certifique-se de ter o Node.js e o Angular CLI instalados)
+### Instalação
 
+```bash
+# 1. Clone o repositório
+git clone [https://github.com/hugoalmx/portfoliohugoalmeidaangular.git](https://github.com/hugoalmx/portfoliohugoalmeidaangular.git)
+
+# 2. Acesse a pasta do projeto
+cd portfoliohugoalmeidaangular
+
+# 3. Instale as dependências
 npm install
 
-Execute o servidor de desenvolvimento:
-
-ng serve
-
-Abra seu navegador e acesse http://localhost:4200/. A aplicação será recarregada automaticamente sempre que você salvar uma alteração nos arquivos.
-
-📁 Estrutura do Projeto
-A estrutura de componentes foi pensada para maximizar a reutilização e a organização do código:
-
-src/app/
-├── components/
-│   ├── feature-highlight/  # (Componente de destaque com imagem)
-│   ├── hero-section/       # (Banner de topo)
-│   ├── navbar/
-│   ├── footer/
-│   └── route-card/         # (Card para as rotas específicas)
-│
-├── passeio-quadriciclo/    # (Página de exemplo para um passeio)
-├── tours/                  # (Página geral de passeios)
-└── ...
-
-👤 Autor
-Desenvolvido por [Hugo e Campos HC Solutions].
-
-LinkedIn: linkedin.com/in/seu-usuario
-
-GitHub: @seu-usuario
-
-Email: seu-email@exemplo.com
-
-📄 Licença
-Este projeto está sob a licença MIT. Veja o arquivo LICENSE.md para mais detalhes.
+# 4. Execute o servidor de desenvolvimento
+ng serve --open
